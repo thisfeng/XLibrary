@@ -1,0 +1,3 @@
+rootProject.name='XLibrary'
+include ':app'
+include ':xlibrary'

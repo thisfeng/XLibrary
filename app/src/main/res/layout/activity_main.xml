@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+   >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.test.baserefreshview.items.ViewItem
+            app:viewType="titleLeftRightSelector"
+            app:itemCount="222222"
+            app:itemName="hahahha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <com.thisfeng.xlibrary.uiKit.views.XTextView
+            android:id="@+id/xtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/chuzu"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/chuzu"
+            android:padding="8dp"
+            android:text="给我滚吧"
+            app:leftHeight="16dp"
+            app:leftWidth="24dp"
+            app:rightHeight="8dp"
+            app:rightWidth="8dp" />
+
+        <com.thisfeng.xlibrary.uiKit.views.nicespinner.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:narrow_height="20dp"
+            app:narrow_width="20dp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/siv"
+            style="@style/sivPicBase"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+              />
+
+        <com.test.baserefreshview.TagLayout
+            android:id="@+id/tags"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+        <com.test.baserefreshview.ListItem
+            android:id="@+id/li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:itemContent="屌你"
+            app:itemIcon="@mipmap/ic_launcher"
+            app:itemName="你"
+            app:itemType="1" />
+
+        <com.thisfeng.xlibrary.xRefresher.XRefresher
+            android:id="@+id/xRefresher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@color/colorAccent"
+            app:placeholderImage="@color/colorAccent" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:background="@color/transparentBlackLite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/dl"
+        android:clickable="false"
+        tools:ignore="ResourceName">
+
+        <RelativeLayout
+            android:id="@+id/rlRight"
+            android:background="@color/transparentBlackLite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+
+            <com.thisfeng.xlibrary.xRefresher.XRefresher
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:id="@+id/tvLogs"
+                android:text="Logs"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

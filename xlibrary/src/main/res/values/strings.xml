@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">XLibrary</string>
+
+    <string name="blank"></string>
+    <string name="text_take_photo">拍摄照片</string>
+    <string name="text_photo_unit">张</string>
+    <string name="text_done">完成</string>
+    <string name="text_folder_all">所有照片</string>
+    <string name="text_preview">预览</string>
+    <string name="msg_photo_error">图片错误</string>
+    <string name="msg_no_camera">没有系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="compress_listener_not_null">压缩图片监听不能为空</string>
+    <string name="compress_parent_path_can_not_be_null">压缩目录不能为空</string>
+    <string name="father_can_not_be_a_file">父目录不能是文件</string>
+    <string name="file_uri_error">文件uri错误</string>
+    <string name="file_no_exits">文件不存在</string>
+    <string name="params_can_not_be_null">参数不能为空</string>
+    <string name="array_out_of_bouds">array_out_of_bouds</string>
+    <string name="text_today">"今天 "</string>
+    <string name="text_yestoday">"昨天 "</string>
+    <string name="text_before_yestoday">"前天 "</string>
+
+    <string name="ignoreThisVersion">忽略此版本</string>
+    <string name="update_now">现在更新</string>
+    <string name="new_version">新版本</string>
+    <string name="text_update_next_time">暂不更新</string>
+    <string name="text_updating">正在更新</string>
+    <string name="text_cancel_update">取消更新</string>
+    <string name="text_update_now">现在更新</string>
+    <string name="update_illustration">暂无说明</string>
+    <string name="tips_get_dowload_url_fail">获取下载地址失败</string>
+    <string name="separator">/</string>
+    <string name="percent" formatted="false">%s%%</string>
+    <string name="zero">0</string>
+    <string name="update_connecting">正在连接</string>
+    <string name="update_error_tips">更新包时出现问题:</string>
+    <string name="failed_to_get_permission_please_go_settings">未获取权限,请到应用管理设置</string>
+    <string name="tips">提示</string>
+    <string name="not_have_permission_to_assess_media_failes">您未授予访问媒体文件权限，请前去设置</string>
+    <string name="go_to_set">去设置</string>
+    <string name="cancel">取消</string>
+    <string name="not_have_install_permission">安装应用需要打开未知来源权限，请去设置中开启应用权限，以允许安装来自此来源的应用</string>
+    <string name="install_apk">安装Apk</string>
+
+
+    <!--TakePhoto-->
+    <string name="tip_type_not_image">选择的不是图片</string>
+    <string name="tip_no_camera">没有相机</string>
+    <string name="tip_tips">提示</string>
+    <string name="tip_compress">正在压缩照片...</string>
+    <string name="tip_compress_failed">"%1$s 图片压缩失败:%2$s picturePath:%3$s"</string>
+    <string name="msg_crop_failed">"有裁切失败的图片"</string>
+    <string name="msg_compress_failed">"有压缩失败的图片"</string>
+    <string name="msg_crop_canceled">" 取消裁切"</string>
+    <string name="msg_operation_canceled">"操作被取消"</string>
+    <string name="tip_permission_camera">没有使用相机的权限，请在权限管理中开启</string>
+    <string name="tip_permission_storage">没有使用SD卡的权限，请在权限管理中开启</string>
+    <string name="tip_permission_camera_storage">没有使用相机和SD卡的权限，请在权限管理中开启</string>
+
+    <!--custom multipleimageselect -->
+    <string name="album_view">选择图片</string>
+    <string name="image_view">单击选择</string>
+
+    <string name="add">确定</string>
+    <string name="selected">已选</string>
+    <string name="limit_exceeded">最多能选 %d 张</string>
+
+</resources>
